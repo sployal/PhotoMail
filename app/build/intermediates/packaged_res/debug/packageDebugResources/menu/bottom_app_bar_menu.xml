@@ -1,0 +1,15 @@
+<!-- res/menu/bottom_app_bar_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_deselect"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="Deselect"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_send"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="Send"
+        app:showAsAction="always" />
+</menu>

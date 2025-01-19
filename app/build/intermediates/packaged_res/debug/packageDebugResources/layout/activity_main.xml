@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#655781">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4A4055"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/topBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Photo mail"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/topBarIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/account_icon22"
+            android:contentDescription="Icon" />
+
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:gravity="center"
+        android:numColumns="3"
+        android:padding="4dp"
+        android:horizontalSpacing="4dp"
+        android:verticalSpacing="4dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_deselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomBar"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Deselect"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        android:visibility="gone" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomBar"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:contentDescription="Send"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        android:visibility="gone" />
+
+    <!-- Bottom Bar with Rounded Button -->
+    <Button
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#1B1A1C"
+        android:text="Recent photos"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
